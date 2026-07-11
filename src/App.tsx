@@ -104,7 +104,7 @@ export default function App() {
         setIsScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -151,6 +151,7 @@ export default function App() {
                   alt="Hamakowy Zakątek Logo" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  decoding="async"
                 />
               </div>
               <div className="flex flex-col">
@@ -356,6 +357,7 @@ export default function App() {
                       alt="Hamakowy Zakątek Realizacja" 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
+                      decoding="async"
                     />
                   </div>
                   <div className="h-[15%] flex items-center justify-center">
@@ -371,6 +373,7 @@ export default function App() {
                       alt="Hamakowy Zakątek Detale" 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
+                      decoding="async"
                     />
                   </div>
                   <div className="h-[18%] flex items-center justify-center">
@@ -405,6 +408,7 @@ export default function App() {
                     alt="Nasza Pracownia" 
                     className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
                     referrerPolicy="no-referrer"
+                    decoding="async"
                   />
                 </div>
               </div>
@@ -609,6 +613,7 @@ export default function App() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                     referrerPolicy="no-referrer"
+                    decoding="async"
                   />
                 </div>
 
@@ -790,6 +795,7 @@ export default function App() {
                     alt="Hamakowy Zakątek Logo" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -897,6 +903,7 @@ export default function App() {
                   alt="Hamakowy Zakątek" 
                   className="max-w-full max-h-[65vh] object-contain rounded-lg"
                   referrerPolicy="no-referrer"
+                  decoding="async"
                 />
               </motion.div>
 

@@ -35,3 +35,33 @@ body {
   background: #f39da0;
 }
 
+/* Performance Optimizations */
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enable hardware acceleration (compositing layers) for smoother animations and hover transitions */
+.group,
+.group img,
+button,
+a,
+.motion-safe-gpu {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+}
+
+/* Prevent layout calculations and rendering for offscreen sections to eliminate scroll lag */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+/* Hero section and Header must remain immediately visible */
+header,
+section:first-of-type {
+  content-visibility: visible !important;
+}
+
