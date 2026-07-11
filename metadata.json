@@ -1,0 +1,6 @@
+{
+  "name": "Hamakowy Zakątek",
+  "description": "Ręcznie szyte hamaki dla zwierząt",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
